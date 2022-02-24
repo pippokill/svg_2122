@@ -1,2 +1,2 @@
-# svg_2122
-Repository del Corso di Sviluppo di Videogiochi - Laurea Triennale in Informatica - Università di Bari Aldo Moro
+# Sviluppo di Videogiochi A.A. 2021-2022
+Repository del Corso di Sviluppo di Videogiochi A.A. 2021-2022 - Laurea Triennale in Informatica - Università degli Studi di Bari Aldo Moro.
