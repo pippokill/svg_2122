@@ -35,6 +35,8 @@ void skyScrolling() {
     for (int x=0; x<backImg.width; x++) {
       backImg.pixels[(y+1)*backImg.width+x]=backImg.pixels[y*backImg.width+x];
     }
+  // la copia precedente può essere realizzata attraverso la funzione copy di PImage 
+  //backImg.copy(0, 0, backImg.width, backImg.height-1, 0, 1, backImg.width, backImg.height-1);
   for (int x=0; x<backImg.width; x++) {
     float r=random(starsR);
     if (r<1)
