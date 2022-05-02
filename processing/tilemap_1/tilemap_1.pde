@@ -44,6 +44,7 @@ void drawCell(int i, int j) {
 
 void draw() {
   background(50, 116, 58);
+  pushMatrix();
   scale( viewScale );
   rotate( viewAng );
   translate( -viewX, -viewY );
@@ -52,6 +53,7 @@ void draw() {
       drawCell( i, j );
     }
   }
+  popMatrix();
   k=0;
   System.out.println("Scale: "+viewScale);
   System.out.println("View-ang: "+viewAng);
