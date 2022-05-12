@@ -1,6 +1,5 @@
 ArrayList<BoxL> bl=new ArrayList();
 int dz=5;
-boolean removeBox;
 SpriteTexture monster;
 boolean dispM=false;
 
@@ -44,11 +43,8 @@ void draw() {
   }
 
   monster.setZ(monster.getZ()+1);
-  
-  if (bl.get(bl.size()-1).getZ()>0)
-    removeBox=true;
-  else removeBox=false;
-  if (removeBox) {
+
+  if (bl.get(bl.size()-1).getZ()>0) {
     bl.remove(bl.size()-1);
     bl.add(0, new BoxL(-1000));
   }
