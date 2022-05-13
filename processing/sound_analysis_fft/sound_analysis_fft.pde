@@ -11,7 +11,6 @@ float barWidth;
 
 public void setup() {
   size(640, 360);
-  background(255);
 
   // Calculate the width of the rects depending on how many bands we have
   barWidth = width/float(bands);

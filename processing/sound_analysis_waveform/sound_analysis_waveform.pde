@@ -5,14 +5,18 @@ Waveform waveform;
 
 int samples = 4096;
 
+AudioIn in;
+
 public void setup()
 {
   size(640, 360);
   background(255);
-  sample = new SoundFile(this, "sample.wav");
-  sample.loop();
+  //sample = new SoundFile(this, "sample.wav");
+  //sample.loop();
+  in=new AudioIn(this, 0);
   waveform = new Waveform(this, samples);
-  waveform.input(sample);
+  //waveform.input(sample);
+  waveform.input(in);
 }
 
 public void draw()

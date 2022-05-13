@@ -12,7 +12,7 @@ void setup() {
       h=!h;
     wave[i] = h?1:0;
   }
-  // Create the audiosample based on the data, set framerate to play 50 oscillations/second
+  // Create the audiosample based on the data, set framerate to play
   sample = new AudioSample(this, wave, resolution);
   // Play the sample in a loop
   sample.amp(0.5);
